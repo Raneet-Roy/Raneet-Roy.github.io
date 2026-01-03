@@ -6,7 +6,7 @@ tags:
   - Bandits
   - Reinforcement Learning
   - Multilingual
-date: '2023-05-28:00:00Z'
+date: '2023-05-28T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
 external_link: 

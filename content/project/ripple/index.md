@@ -4,7 +4,7 @@ summary: PyTorch library for Risk-aware ML
 tags:
   - Deep Learning
   - Uncertainty Estimation
-date: '2023-06-10:00:00Z'
+date: '2023-06-10T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
 external_link: 

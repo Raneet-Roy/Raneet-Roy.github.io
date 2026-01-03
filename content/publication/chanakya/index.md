@@ -14,11 +14,11 @@ authors:
 # Author notes (optional)
 author_notes:
 
-date: '2023-06-01T00:00:00Z'
+date: '2023-06-01T00T00:00:00Z'
 doi: 'https://doi.org/10.48550/arXiv.2106.05665'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2023-06-01T00:00:00Z'
+publishDate: '2023-06-01T00T00:00:00Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

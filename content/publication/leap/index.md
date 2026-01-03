@@ -16,11 +16,11 @@ authors:
 # Author notes (optional)
 author_notes:
 
-date: '2024-10-30T00:00:00Z'
+date: '2024-10-30T00T00:00:00Z'
 doi: 'https://doi.org/10.48550/arXiv.2405.18359'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-10-30T00:00:00Z'
+publishDate: '2024-10-30T00T00:00:00Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
