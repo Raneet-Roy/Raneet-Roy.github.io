@@ -6,7 +6,7 @@ title: 'Bridging the Gap: Dynamic Learning Strategies for Improving Multilingual
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Somnath Kumar*
-  - Vaibhav Balloli*
+  - Raneet Roy*
   - Mercy Ranjit
   - Tanuja Ganu
   - Kabir Ahuja

@@ -11,7 +11,7 @@ external_link:
 image: 
 
 links: 
-url_code: 'https://github.com/vballoli/nfnets-pytorch'
+url_code: 'https://github.com/rroy/nfnets-pytorch'
 url_pdf: ''
 url_slides: ''
 url_video: ''
@@ -20,7 +20,7 @@ slides: ""
 ---
 
 # PyTorch implementation of Normalizer-Free Networks and Adaptive Gradient Clipping
-![Python Package](https://github.com/vballoli/nfnets-pytorch/workflows/Upload%20Python%20Package/badge.svg)
+![Python Package](https://github.com/rroy/nfnets-pytorch/workflows/Upload%20Python%20Package/badge.svg)
 ![Docs](https://readthedocs.org/projects/nfnets-pytorch/badge/?version=latest)
 [![Papers using ma-gym](https://img.shields.io/badge/-Papers%20using%20nfnets--pytorch-blue?style=flat&logo=googlescholar)](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=nfnets-pytorch&btnG=)
 
@@ -31,7 +31,7 @@ Original code: https://github.com/deepmind/deepmind-research/tree/master/nfnets
 
 Blog post: https://tourdeml.github.io/blog/posts/2021-03-31-adaptive-gradient-clipping/. Feel free to subscribe to the newsletter, and leave a comment if you have anything to add/suggest publicly.
 
-Do star this repository if it helps your work, and [don't forget to cite](https://github.com/vballoli/nfnets-pytorch#cite-this-repository) if you use this code in your research!
+Do star this repository if it helps your work, and [don't forget to cite](https://github.com/rroy/nfnets-pytorch#cite-this-repository) if you use this code in your research!
 
 # Installation
 
@@ -41,7 +41,7 @@ Install from PyPi:
 
 or install the latest code using:
 
-`pip3 install git+https://github.com/vballoli/nfnets-pytorch`
+`pip3 install git+https://github.com/rroy/nfnets-pytorch`
 # Usage
 ## WSConv2d
 
@@ -140,9 +140,9 @@ To cite the original paper, use:
 To cite this repository, use:
 ```
 @misc{nfnets2021pytorch,
-  author = {Vaibhav Balloli},
+  author = {Raneet Roy},
   title = {A PyTorch implementation of NFNets and Adaptive Gradient Clipping},
   year = {2021},
-  howpublished = {\url{https://github.com/vballoli/nfnets-pytorch}}
+  howpublished = {\url{https://github.com/rroy/nfnets-pytorch}}
 }
 ```

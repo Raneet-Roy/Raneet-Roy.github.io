@@ -12,7 +12,7 @@ external_link:
 image:
 
 links: 
-url_code: 'https://github.com/vballoli/Ripple'
+url_code: 'https://github.com/rroy/Ripple'
 url_pdf: ''
 url_slides: ''
 url_video: ''

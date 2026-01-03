@@ -11,7 +11,7 @@ external_link:
 image:
 
 links: 
-url_code: 'https://github.com/vballoli/offlax'
+url_code: 'https://github.com/rroy/offlax'
 url_pdf: ''
 url_slides: ''
 url_video: ''

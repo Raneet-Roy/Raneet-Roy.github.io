@@ -1,10 +1,10 @@
 ---
 # Display name
-title: Vaibhav Balloli
+title: Raneet Roy
 
 # Full name (for SEO)
-first_name: Vaibhav
-last_name: Balloli
+first_name: Raneet
+last_name: Roy
 
 # Status emoji
 status:
@@ -61,17 +61,17 @@ social:
       header: true
   - icon: github
     icon_pack: fab
-    link: https://github.com/vballoli
+    link: https://github.com/rroy
     display:
       header: true
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/in/vaibhavballoli
+    link: https://www.linkedin.com/in/
     display:
       header: true
   - icon: square fa-solid
     icon_pack: fab
-    link: https://bsky.app/profile/vballoli.bsky.social
+    link: https://bsky.app/profile/rroy.bsky.social
     display:
       header: true
   # Link to a PDF of your resume/CV.
@@ -89,6 +89,6 @@ highlight_name: true
 summary: 10
 ---
 
-👋 Hi, I'm Vaibhav Balloli, a Ph.D. candidate at [Realize Lab](https://sites.google.com/view/realize-lab) advised by [Prof. Elizabeth Bondi-Kelly](https://sites.google.com/view/elizabethbondi) at the University of Michigan, Ann Arbor. I broadly research designing and deploying human-centered AI systems that alleviate specific societal issues. My research topics include human-AI collaborative systems, multi-agent systems and LLMs. I'm currently working on [improving access to reproductive health information](https://cse.engin.umich.edu/stories/elizabeth-bondi-kelly-and-alex-peahl-receive-google-grant-to-develop-ai-powered-reproductive-health-chatbot) using LLMs and LLM-powered agents!
+👋 Hi, I'm Raneet Roy, a Ph.D. candidate at [Realize Lab](https://sites.google.com/view/realize-lab) advised by [Prof. Elizabeth Bondi-Kelly](https://sites.google.com/view/elizabethbondi) at the University of Michigan, Ann Arbor. I broadly research designing and deploying human-centered AI systems that alleviate specific societal issues. My research topics include human-AI collaborative systems, multi-agent systems and LLMs. I'm currently working on [improving access to reproductive health information](https://cse.engin.umich.edu/stories/elizabeth-bondi-kelly-and-alex-peahl-receive-google-grant-to-develop-ai-powered-reproductive-health-chatbot) using LLMs and LLM-powered agents!
 
-Previously, I was a Research Fellow at Microsoft Research India, I've worked on [HAMS](https://www.microsoft.com/en-us/research/project/hams/), [Project Vasudha](https://www.microsoft.com/en-us/research/project/vasudha/) and [Project VeLLM](https://www.microsoft.com/en-us/research/project/project-vellm/). I'm a proponent of Open Source and also pretty active in developing in and contributing to Open Source, so do checkout my work on my [GitHub](https://github.com/vballoli).
+Previously, I was a Research Fellow at Microsoft Research India, I've worked on [HAMS](https://www.microsoft.com/en-us/research/project/hams/), [Project Vasudha](https://www.microsoft.com/en-us/research/project/vasudha/) and [Project VeLLM](https://www.microsoft.com/en-us/research/project/project-vellm/). I'm a proponent of Open Source and also pretty active in developing in and contributing to Open Source, so do checkout my work on my [GitHub](https://github.com/rroy).

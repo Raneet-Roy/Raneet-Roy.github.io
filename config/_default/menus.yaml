@@ -3,10 +3,10 @@ main:
     url: '#about'
     weight: 10
   - name: Research Blog
-    url: 'https://research-blog.vballoli.com'
+    url: 'https://research-blog.rroy.com'
     weight: 20
   - name: Blog
-    url: 'https://vballoli.com'
+    url: 'https://rroy.com'
     weight: 30
   - name: Publications
     url: '#featured'
@@ -15,7 +15,7 @@ main:
     url: '#contact'
     weight: 60
   - name: Books
-    url: 'https://vballoli.com/books'
+    url: 'https://rroy.com/books'
     weight: 70
   - name: CV
     url: uploads/Vaibhav_Balloli_CV.pdf

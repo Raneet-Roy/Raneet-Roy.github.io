@@ -18,7 +18,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'Website of Vaibhav Balloli'
+    description: 'Website of Raneet Roy'
     twitter: 'v_balloli'
   analytics:
     google_analytics: 'G-JHN7HCN826'
@@ -43,7 +43,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Vaibhav Balloli. This work is licensed under {license}'
+    notice: '© {year} Raneet Roy. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -68,7 +68,7 @@ features:
   privacy_pack:
     enable: true
   repository:
-    url: 'https://github.com/vballoli/vballoli.github.io'
+    url: 'https://github.com/rroy/rroy.github.io'
     content_dir: content
     branch: main
   avatar:

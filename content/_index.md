@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: Vaibhav Balloli
+title: Raneet Roy
 date: 2022-10-24
 type: landing
 

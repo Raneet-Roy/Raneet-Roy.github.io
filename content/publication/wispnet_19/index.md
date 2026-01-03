@@ -44,7 +44,7 @@ featured: false
 #   url: http://example.org
 
 url_pdf: '/papers/OVS-WISP-02Dec2019.pdf'
-url_code: 'https://github.com/vballoli/VectorsAndroid'
+url_code: 'https://github.com/rroy/VectorsAndroid'
 url_dataset: ''
 url_poster: ''
 url_project: ''
