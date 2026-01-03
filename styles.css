@@ -486,3 +486,13 @@ h1 .name{
   .card, .project{ padding:14px; }
   .pad{ padding:14px; }
 }
+/* HARD KILL: remove the entire decorative card below image */
+.dial, .dial-ring, .dial-text,
+[class*="dial"]{
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
