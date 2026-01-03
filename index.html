@@ -2,172 +2,314 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Raneet Roy | Portfolio</title>
-  <meta name="description" content="Raneet Roy — Supply Chain Ops (Flipkart) | BTech CSE | Projects in ML and Web Dev" />
+  <meta name="description" content="Raneet Roy — Supply Chain Operations (Flipkart) | Portfolio" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-grid">
-      <div>
-        <p class="kicker">Portfolio</p>
-        <h1>Raneet Roy</h1>
-        <p class="subtitle">
-          Supply Chain Operations (SCCP) @ Flipkart • BTech CSE • ML + Web Development
-        </p>
+  <!-- Background glow blobs -->
+  <div class="bg">
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+    <div class="glow g3"></div>
+  </div>
 
-        <div class="actions">
-          <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-          <a class="btn" href="#contact">Contact</a>
-        </div>
-
-        <div class="links">
-          <a href="mailto:raneet12000120018@gmail.com">raneet12000120018@gmail.com</a>
-          <span class="dot">•</span>
-          <a href="#" id="githubLink" target="_blank" rel="noopener">GitHub</a>
-          <span class="dot">•</span>
-          <a href="#" id="linkedinLink" target="_blank" rel="noopener">LinkedIn</a>
-          <span class="dot">•</span>
-          <span>+91 8617698471</span>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="wrap nav-inner glass">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <div>
+          <div class="brand-top">Raneet Roy</div>
+          <div class="brand-sub">Supply Chain Ops • Tech</div>
         </div>
       </div>
 
-      <div class="card quick-card">
-        <h2>Quick Summary</h2>
-        <ul>
-          <li>Operations + MIS work: manpower utilization, attainment %, SLA tracking</li>
-          <li>Warehouse execution: GRN, packaging, put-away, inventory</li>
-          <li>ML internship: benchmarked SVM / RF / Logistic Regression</li>
-          <li>Skills: Python, SQL, C++, HTML/CSS/JS, Pandas, NumPy</li>
-        </ul>
+      <nav class="menu" id="menu">
+        <a href="#home">Home</a>
+        <a href="#speciality">Service</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <div class="mini-links">
+          <a href="mailto:raneet12000120018@gmail.com" title="Email">✉</a>
+          <a id="githubTop" href="#" target="_blank" rel="noopener" title="GitHub">⌂</a>
+          <a id="linkedinTop" href="#" target="_blank" rel="noopener" title="LinkedIn">in</a>
+        </div>
+
+        <a class="btn ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a class="btn primary" href="#contact">Discuss for Projects</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
       </div>
     </div>
   </header>
 
-  <main class="container">
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>
-        I am a BTech Computer Science graduate (CGPA 8.48) currently working in Supply Chain Operations (SCCP)
-        at Flipkart (InstaKart Services). I focus on operational excellence across inbound and warehouse processes
-        and support performance tracking through MIS reporting. I’m also interested in machine learning and web
-        development, with projects ranging from classification models to responsive web apps.
-      </p>
-    </section>
+  <main class="wrap" id="home">
 
-    <section id="experience" class="section">
-      <h2>Work Experience</h2>
+    <!-- HERO -->
+    <section class="hero glass">
+      <div class="hero-left">
+        <p class="kicker">This is your</p>
+        <h1>
+          Operations + Data
+          <span class="accent">Portfolio</span>
+          <span class="name">Raneet Roy</span>
+        </h1>
 
-      <div class="item">
-        <div class="item-top">
-          <h3>Flipkart (InstaKart Services Pvt Ltd) — Supply Chain Operations (SCCP)</h3>
-          <span class="meta">Sep 2024 – Present • B2C Dept., Haringhata Kalash-RDC</span>
-        </div>
-        <ul>
-          <li>Supervised GRN, packaging, put-away, and inventory processes ensuring efficiency and compliance.</li>
-          <li>Led a team, optimized workflows, and drove performance improvements.</li>
-          <li>Handled MIS: manpower utilization, attainment %, adherence across VMS, Tag Loop, SPF, and handover adherence.</li>
-          <li>Hourly follow-ups on GRN, put-away, returns, pick, and pack for 10 clients to ensure SLA compliance.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-top">
-          <h3>CSIR – Central Mechanical Engineering Research Institute — Summer Intern</h3>
-          <span class="meta">May 2023 – Jul 2023 • Project: Binary Classification (Pima Indians Diabetes)</span>
-        </div>
-        <ul>
-          <li>Compared supervised learning models to predict diabetes presence using medical indicators.</li>
-          <li>Implemented SVM, Random Forest, and Logistic Regression using scikit-learn; evaluated accuracy, precision, recall, F1.</li>
-          <li>Found tuned SVM performed best on precision and F1-score and summarized model-selection insights.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Breast Cancer Detection (ML)</h3>
-          <p>
-            Built an SVM-based classifier with hyperparameter tuning (Random Search, Grid Search, Bayes Search)
-            to classify histopathological images as malignant or benign. Covered preprocessing, training, and evaluation.
-          </p>
-          <div class="tags">
-            <span>Python</span><span>SVM</span><span>Model Tuning</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Music Player (Web App)</h3>
-          <p>
-            Created a responsive web-based music player with playlist management and playback controls.
-            Hosted on GitHub and deployed on Netlify.
-          </p>
-          <div class="tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Languages</h3>
-          <p>HTML, CSS, JavaScript, C++, Python, SQL</p>
-        </div>
-        <div class="card">
-          <h3>Libraries / Tools</h3>
-          <p>NumPy, Pandas, Matplotlib</p>
-        </div>
-        <div class="card">
-          <h3>Courses</h3>
-          <p>Responsive Web Design, HTML/CSS/JS for Web Developers, Python (Kaggle), Cybersecurity Fundamentals</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <h2>Education</h2>
-      <div class="item">
-        <div class="item-top">
-          <h3>Dr. B. C. Roy Engineering College, Durgapur</h3>
-          <span class="meta">Sep 2020 – Aug 2024 • BTech CSE • CGPA: 8.48</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="achievements" class="section">
-      <h2>Achievements</h2>
-      <ul>
-        <li>HackerRank: 5★ in C++</li>
-        <li>Microsoft Certification: AI-900 (Score 731)</li>
-        <li>Cocubes AON test: 583</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <div class="card contact-card">
-        <p><strong>Email:</strong> <a href="mailto:raneet12000120018@gmail.com">raneet12000120018@gmail.com</a></p>
-        <p><strong>Phone:</strong> +91 8617698471</p>
-        <p>
-          <strong>Links:</strong>
-          <a href="#" id="githubLink2" target="_blank" rel="noopener">GitHub</a>
-          <span class="dot">•</span>
-          <a href="#" id="linkedinLink2" target="_blank" rel="noopener">LinkedIn</a>
+        <p class="lead">
+          Supply Chain Operations (SCCP) at Flipkart (InstaKart). BTech CSE (CGPA 8.48).
+          Strong in MIS reporting, SLA tracking, warehouse execution, and Python/SQL.
         </p>
-        <p class="muted">Tip: Update your GitHub/LinkedIn URLs in <code>script.js</code>.</p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Portfolio</a>
+          <a class="btn ghost" href="assets/resume.pdf" target="_blank" rel="noopener">View Resume</a>
+        </div>
+
+        <div class="hero-meta">
+          <span>📧 raneet12000120018@gmail.com</span>
+          <span class="dot">•</span>
+          <span>📱 +91 8617698471</span>
+          <span class="dot">•</span>
+          <span>📍 India</span>
+        </div>
+
+        <div class="hero-box glass">
+          <div class="hero-box-title">Currently</div>
+          <div class="hero-box-text">
+            Flipkart (InstaKart Services) — Supply Chain Operations (SCCP), B2C Dept. (Sep 2024 – Present)
+          </div>
+        </div>
+
+        <div class="impact glass">
+          <h3>Impact Snapshot</h3>
+          <div class="impact-grid">
+            <div class="impact-card">
+              <div class="impact-num">10+</div>
+              <div class="impact-label">Clients tracked hourly</div>
+            </div>
+            <div class="impact-card">
+              <div class="impact-num">24×7</div>
+              <div class="impact-label">SLA monitoring</div>
+            </div>
+            <div class="impact-card">
+              <div class="impact-num">BBD</div>
+              <div class="impact-label">High-volume ops execution</div>
+            </div>
+            <div class="impact-card">
+              <div class="impact-num">ML</div>
+              <div class="impact-label">SVM • RF • LR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="portrait">
+          <img src="assets/profile.jpg" alt="Raneet Roy" />
+          <div class="portrait-frame"></div>
+        </div>
+
+        <!-- Decorative shapes (template vibe) -->
+        <div class="shape s1"></div>
+        <div class="shape s2"></div>
+        <div class="shape s3"></div>
+
+        <div class="dial glass">
+          <div class="dial-text">SLA • MIS • OPS</div>
+          <div class="dial-ring"></div>
+        </div>
+
+        <div class="skills-card glass">
+          <h3>Skills</h3>
+          <div class="pill-row">
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Excel</span>
+            <span class="pill">C++</span>
+            <span class="pill">HTML/CSS</span>
+            <span class="pill">JavaScript</span>
+          </div>
+          <p class="muted small">Libraries: NumPy, Pandas, Matplotlib</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIALITY -->
+    <section id="speciality" class="section">
+      <div class="section-head">
+        <div class="section-kicker">SPECIALITY</div>
+        <h2>My <span class="accent">specialities</span></h2>
+        <p class="muted">Execution-focused skills from operations + reporting + data work.</p>
+      </div>
+
+      <div class="grid3">
+        <div class="card glass">
+          <div class="icon">📦</div>
+          <h3>Warehouse Execution</h3>
+          <p class="muted">
+            GRN, packaging, put-away, returns, pick/pack follow-ups to keep flow smooth and compliant.
+          </p>
+        </div>
+
+        <div class="card glass">
+          <div class="icon">📊</div>
+          <h3>MIS & Performance Tracking</h3>
+          <p class="muted">
+            Manpower utilization, attainment %, adherence across VMS / Tag Loop / SPF and handover protocols.
+          </p>
+        </div>
+
+        <div class="card glass">
+          <div class="icon">🤖</div>
+          <h3>ML + Data (Python)</h3>
+          <p class="muted">
+            Built and benchmarked SVM, Random Forest, Logistic Regression with accuracy/precision/recall/F1.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <div class="section-kicker">PROJECTS</div>
+        <h2>Selected <span class="accent">projects</span></h2>
+      </div>
+
+      <div class="grid2">
+        <article class="project glass">
+          <div class="proj-top">
+            <h3>Breast Cancer Detection (ML)</h3>
+            <div class="tags">
+              <span>Python</span><span>SVM</span><span>Tuning</span>
+            </div>
+          </div>
+          <p class="muted">
+            Used SVM with hyperparameter tuning (Random Search, Grid Search, Bayes Search) to classify
+            malignant vs benign with preprocessing → training → evaluation pipeline.
+          </p>
+          <div class="proj-actions">
+            <a class="btn ghost" href="#" title="Replace with your GitHub link">GitHub</a>
+            <a class="btn ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </div>
+        </article>
+
+        <article class="project glass">
+          <div class="proj-top">
+            <h3>Music Player (Web App)</h3>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+          <p class="muted">
+            Responsive music player with playlist management and playback controls. Hosted on GitHub and deployed on Netlify.
+          </p>
+          <div class="proj-actions">
+            <a class="btn ghost" href="#" title="Replace with your GitHub link">GitHub</a>
+            <a class="btn ghost" href="#" title="Replace with your Live link">Live</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-head">
+        <div class="section-kicker">EXPERIENCE</div>
+        <h2>Work <span class="accent">experience</span></h2>
+      </div>
+
+      <div class="grid2">
+        <div class="card glass pad">
+          <h3>Flipkart (InstaKart Services) — SCCP</h3>
+          <div class="muted small">Sep 2024 – Present • B2C Dept., Haringhata Kalash-RDC</div>
+          <ul class="muted list">
+            <li>Supervised GRN, packaging, put-away, inventory operations for efficiency & compliance.</li>
+            <li>Led teams and MIS reporting (manpower utilization, attainment %, adherence across VMS/Tag Loop/SPF).</li>
+            <li>Hourly follow-ups on inbound/outbound to ensure SLA compliance for multiple clients.</li>
+            <li>Supported high-volume operations during peak season (e.g., Big Billion Day).</li>
+          </ul>
+        </div>
+
+        <div class="card glass pad">
+          <h3>CSIR–CMERI — Summer Intern</h3>
+          <div class="muted small">May 2023 – Jul 2023 • Binary Classification Project</div>
+          <ul class="muted list">
+            <li>Benchmarked SVM, Random Forest, Logistic Regression using scikit-learn.</li>
+            <li>Evaluated accuracy, precision, recall, F1-score; tuned SVM performed best on precision & F1.</li>
+            <li>Documented results and model selection insights clearly.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="card glass pad">
+          <h3>Education</h3>
+          <p class="muted">
+            Dr. B. C. Roy Engineering College, Durgapur — BTech CSE (CGPA 8.48)
+          </p>
+        </div>
+
+        <div class="card glass pad">
+          <h3>Achievements</h3>
+          <ul class="muted list">
+            <li>HackerRank: 5★ in C++</li>
+            <li>Microsoft AI-900: 731</li>
+            <li>Cocubes AON: 583</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="cta glass">
+        <div>
+          <div class="cta-title">Have any project idea?</div>
+          <div class="muted small">Let’s connect and build it.</div>
+        </div>
+        <a class="btn primary" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <div class="section-kicker">CONTACT</div>
+        <h2>Let’s <span class="accent">talk</span></h2>
+      </div>
+
+      <div class="grid2">
+        <div class="card glass pad">
+          <h3>Reach out</h3>
+          <div class="contact">
+            <a href="mailto:raneet12000120018@gmail.com">raneet12000120018@gmail.com</a>
+            <div class="muted">+91 8617698471</div>
+            <a id="githubBottom" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a id="linkedinBottom" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <div class="muted small" style="margin-top:10px;">
+            Prefer email. I respond quickly.
+          </div>
+        </div>
+
+        <div class="card glass pad">
+          <h3>Download Resume</h3>
+          <p class="muted">Latest CV PDF:</p>
+          <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noopener">Open Resume</a>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Raneet Roy • Built on GitHub Pages</p>
+      <div class="muted">© <span id="year"></span> Raneet Roy • Built on GitHub Pages</div>
     </footer>
   </main>
 
