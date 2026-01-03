@@ -6,7 +6,8 @@ tags:
   - Integer Linear Programming
   - Robust Optimization
   - Deep Learning
-date: '2023-03-01:00:00Z'
+date: 2023-03-01 00:00:00 +0000
+
 
 # Optional external URL for project (replaces project detail page).
 external_link: 'https://www.microsoft.com/en-us/research/project/vasudha'
