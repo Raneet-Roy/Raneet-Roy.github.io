@@ -181,7 +181,7 @@ h1 .name{ display:block; font-size:48px;margin-top:6px; }
 
 .portrait img{
   width:100%;
-  height:420px;
+  height:500px;
   object-fit:cover;
   object-position: 50% 15%; /* focuses on face */
   display:block;
