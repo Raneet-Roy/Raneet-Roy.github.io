@@ -258,3 +258,96 @@ h1 .name{ display:block; font-size:48px;margin-top:6px; }
   .impact-grid{ grid-template-columns:1fr; }
   .mini-links{ display:none; }
 }
+
+/* =========================
+   EXPERIENCE SECTION FIX
+   ========================= */
+
+/* Better section title spacing */
+#experience .section-head,
+#experience .section-headline{
+  margin-bottom: 14px;
+}
+
+/* Make the experience grid tighter + consistent */
+#experience .grid2{
+  gap: 16px;
+  align-items: start;
+}
+
+/* Cards: reduce empty space, cleaner typography */
+#experience .card,
+#experience .project{
+  padding: 18px;
+  border-radius: 18px;
+}
+
+/* Headings */
+#experience h3{
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* Subheader line (date/location) */
+#experience .muted,
+#experience .subline{
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: rgba(168,175,192,0.95);
+}
+
+/* Bullet list: less indent, better line height */
+#experience ul{
+  margin: 0;
+  padding-left: 18px;
+}
+#experience li{
+  margin: 8px 0;
+  line-height: 1.5;
+  color: rgba(232,234,240,0.90);
+}
+
+/* Reduce the “too tall empty card” feel */
+#experience .card{
+  min-height: unset;
+}
+
+/* Education + Achievements: compact style */
+#experience .card.compact,
+#experience .compact{
+  padding: 16px;
+}
+
+/* CTA bar alignment fix */
+#experience .cta{
+  margin-top: 18px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+#experience .cta .btn{
+  margin-left: auto;
+}
+
+/* Mobile: stack nicely */
+@media (max-width: 980px){
+  #experience .grid2{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px){
+  #experience h3{ font-size: 18px; }
+  #experience .cta{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #experience .cta .btn{
+    margin-left: 0;
+    width: 100%;
+  }
+}
