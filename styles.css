@@ -1,8 +1,3 @@
-/* =========================
-   Raneet Roy Portfolio
-   FINAL responsive CSS
-   ========================= */
-
 :root{
   --bg:#070710;
   --text:#e8eaf0;
@@ -20,30 +15,26 @@
 
 *{ box-sizing:border-box; }
 html,body{ margin:0; padding:0; }
-
 body{
   font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   background: var(--bg);
   color: var(--text);
   overflow-x:hidden;
 }
-
 a{ color:inherit; text-decoration:none; }
 .wrap{ width:min(1150px,92vw); margin:0 auto; }
 
-/* ---------- Background glow ---------- */
+/* Background glows */
 .bg{ position:fixed; inset:0; z-index:-1; pointer-events:none; }
 .glow{
-  position:absolute;
-  border-radius:999px;
-  filter: blur(70px);
-  opacity:0.6;
+  position:absolute; border-radius:999px;
+  filter: blur(70px); opacity:0.6;
 }
 .g1{ width:520px;height:520px;left:-170px;top:-150px;background:rgba(109,94,252,0.55); }
 .g2{ width:520px;height:520px;right:-220px;top:90px;background:rgba(34,211,238,0.35); }
 .g3{ width:650px;height:650px;left:15%;bottom:-320px;background:rgba(109,94,252,0.25); }
 
-/* ---------- Glass ---------- */
+/* Glass */
 .glass{
   background: linear-gradient(180deg,var(--glass),var(--glass2));
   border:1px solid var(--border);
@@ -52,7 +43,7 @@ a{ color:inherit; text-decoration:none; }
   box-shadow: var(--shadow);
 }
 
-/* ---------- Buttons ---------- */
+/* Buttons */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -62,54 +53,47 @@ a{ color:inherit; text-decoration:none; }
   border:1px solid rgba(255,255,255,0.14);
   background: rgba(255,255,255,0.04);
   font-size:14px;
+  white-space:nowrap;
+  transition: transform .15s ease, border-color .15s ease;
 }
+.btn:hover{ transform:translateY(-1px); border-color: rgba(255,255,255,0.25); }
 .btn.primary{
+  border-color: rgba(109,94,252,0.6);
   background: linear-gradient(90deg,rgba(109,94,252,.85),rgba(34,211,238,.35));
-  border-color:rgba(109,94,252,.6);
 }
-.btn:hover{ transform:translateY(-1px); }
+.btn.ghost{ background: rgba(255,255,255,0.03); }
 
 .muted{ color:var(--muted); }
+.small{ font-size:12px; }
 
-/* =========================
-   NAVBAR
-   ========================= */
+/* NAV */
 .nav{
-  position:sticky;
-  top:0;
-  z-index:20;
+  position:sticky; top:0; z-index:50;
+  padding:10px 0;
   background: rgba(7,7,16,.6);
   backdrop-filter: blur(12px);
   border-bottom:1px solid rgba(255,255,255,.08);
 }
 .nav-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:12px 14px;
+  display:flex; align-items:center; justify-content:space-between;
   gap:14px;
+  padding:10px 14px;
 }
-.brand{ display:flex; gap:10px; align-items:center; }
+.brand{ display:flex; align-items:center; gap:10px; min-width:190px; }
 .brand-dot{ width:10px;height:10px;border-radius:50%;background:var(--accent); }
-.brand-sub{ font-size:12px;color:var(--muted); }
+.brand-top{ font-weight:900; }
+.brand-sub{ font-size:12px; color:var(--muted); margin-top:3px; }
 
-.menu{ display:flex; gap:18px; }
-.menu a{ font-size:14px;color:var(--muted); }
-.menu a:hover{ color:var(--text); }
-
-.nav-right{ display:flex; gap:10px; }
-.mini-links{ display:flex; gap:8px; }
-.mini-links a{
-  width:30px;height:30px;
-  display:flex;align-items:center;justify-content:center;
-  border-radius:10px;
-  border:1px solid rgba(255,255,255,.12);
-  background:rgba(255,255,255,.04);
+.menu{ display:flex; gap:16px; align-items:center; }
+.menu a{
+  color:var(--muted); font-size:14px;
+  padding:8px 10px; border-radius:12px;
 }
+.menu a:hover{ color:var(--text); background: rgba(255,255,255,0.06); }
 
-/* =========================
-   HERO
-   ========================= */
+.nav-right{ display:flex; gap:10px; align-items:center; }
+
+/* HERO */
 .hero{
   margin-top:18px;
   padding:18px;
@@ -118,236 +102,130 @@ a{ color:inherit; text-decoration:none; }
   gap:18px;
   align-items:start;
 }
+.kicker{ margin:0 0 6px; color:var(--muted); }
+h1{ margin:0 0 12px; font-size:46px; line-height:1.06; }
+h1 .name{ display:block; margin-top:6px; font-size:48px; }
+.lead{ margin:0 0 14px; color:var(--muted); line-height:1.55; max-width:70ch; }
 
-.kicker{ color:var(--muted); margin-bottom:6px; }
-h1{ font-size:46px; line-height:1.05; margin:0; }
-h1 .accent{ color:var(--accent2); }
-h1 .name{ display:block; font-size:48px;margin-top:6px; }
+.hero-actions{ display:flex; gap:12px; flex-wrap:wrap; margin:14px 0 10px; }
+.hero-meta{ display:flex; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:13px; margin-top:8px; }
+.dot{ opacity:.5; }
 
-.lead{ color:var(--muted); margin:12px 0; max-width:65ch; }
-
-.hero-actions{
-  display:flex;
-  gap:12px;
-  margin:14px 0;
-  flex-wrap:wrap;
-}
-
-.hero-meta{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  font-size:13px;
-  color:var(--muted);
-}
-
-/* ---------- Left column cards ---------- */
-.hero-box{ padding:14px;margin-top:12px; }
-.hero-box-title{ font-weight:800;margin-bottom:6px; }
-
-.impact{ padding:14px;margin-top:12px; }
-.impact h3{ margin:0 0 10px;font-size:15px; }
+.box-title{ font-weight:900; margin-bottom:8px; }
+.currently{ padding:14px; margin-top:14px; }
+.impact{ padding:14px; margin-top:14px; }
 
 .impact-grid{
   display:grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, minmax(0,1fr));
   gap:12px;
 }
 .impact-card{
   padding:12px;
   border-radius:14px;
-  border:1px solid rgba(255,255,255,.12);
-  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.03);
 }
-.impact-num{ font-size:22px;font-weight:900;color:var(--accent2); }
-.impact-label{ font-size:13px;color:var(--muted); }
+.impact-num{ font-size:22px; font-weight:900; color:var(--accent2); }
+.impact-label{ font-size:13px; color:var(--muted); margin-top:4px; }
 
-/* ---------- Right column ---------- */
+/* Right column */
 .hero-right{
-  display:grid;
-  grid-template-rows: auto auto;
+  display:flex;
+  flex-direction:column;
   gap:14px;
-  align-content:start;
+  align-items:stretch;
 }
 
-/* Profile image FIXED */
-/* Profile image – keep natural look (no ugly crop) */
-.portrait{
-  width:100%;
-  border-radius:22px;
-  overflow:hidden;
-  border:1px solid rgba(255,255,255,.12);
-}
-
+/* Portrait — natural look */
+.portrait{ padding:0; overflow:hidden; }
 .portrait img{
   width:100%;
-  height:500px;
-  object-fit:cover;
-  object-position: 50% 15%; /* focuses on face */
+  height:auto;
   display:block;
 }
 
-
-
 /* Skills card */
 .skills-card{ padding:14px; }
-.skills-card h3{ margin:0 0 10px;font-size:15px; }
-
-.pill-row{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-}
+.pill-row{ display:flex; flex-wrap:wrap; gap:8px; }
 .pill{
-  font-size:12px;
-  color:var(--muted);
-  border:1px solid rgba(255,255,255,.12);
+  font-size:12px; color:var(--muted);
+  border:1px solid rgba(255,255,255,0.12);
   padding:5px 10px;
   border-radius:999px;
-  background:rgba(255,255,255,.03);
+  background: rgba(255,255,255,0.03);
 }
 
-/* =========================
-   SECTIONS
-   ========================= */
+/* SECTIONS */
 .section{ padding:26px 0; }
-.section-kicker{ font-size:11px;letter-spacing:.18em;color:var(--muted); }
-.section h2{ margin:8px 0;font-size:26px; }
+.section-head{ margin-bottom:14px; }
+.section-kicker{
+  color:var(--muted);
+  letter-spacing:.18em;
+  font-size:11px;
+  margin:0;
+}
+.section h2{ margin:8px 0 6px; font-size:26px; }
 
-.grid3{ display:grid;grid-template-columns:repeat(3,1fr);gap:14px; }
-.grid2{ display:grid;grid-template-columns:repeat(2,1fr);gap:14px; }
+.grid3{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap:14px;
+}
+.grid2{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:14px;
+  align-items:start;
+}
 
 .card{ padding:16px; }
-.project{ padding:16px; }
+.card h3{ margin:0 0 8px; font-size:16px; }
+.list{ margin:10px 0 0; padding-left:18px; }
+.list li{ margin:6px 0; line-height:1.45; }
 
-.tags{ display:flex;gap:8px;flex-wrap:wrap; }
-.tags span{
-  font-size:12px;
-  padding:4px 8px;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.12);
-  background:rgba(255,255,255,.03);
-  color:var(--muted);
+.compact{ padding:16px; }
+
+/* CTA */
+.cta{
+  margin-top:16px;
+  padding:16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
 }
+.cta-title{ font-weight:900; font-size:16px; }
 
-/* =========================
-   FOOTER
-   ========================= */
+/* Contact */
+.contact{ display:flex; flex-direction:column; gap:10px; margin-top:6px; }
+.contact a{
+  width:fit-content;
+  border-bottom:1px dashed rgba(255,255,255,0.22);
+}
+.contact a:hover{ border-bottom-color: rgba(34,211,238,0.6); }
+
+/* Footer */
 .footer{
   padding:26px 0 42px;
   text-align:center;
-  border-top:1px solid rgba(255,255,255,.08);
+  border-top:1px solid rgba(255,255,255,0.08);
   margin-top:12px;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+/* RESPONSIVE */
 @media (max-width: 980px){
-  .hero{ grid-template-columns:1fr; }
-  .grid3,.grid2{ grid-template-columns:1fr; }
+  .hero{ grid-template-columns: 1fr; padding:14px; }
+  .grid3{ grid-template-columns: 1fr; }
+  .grid2{ grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px){
   h1{ font-size:34px; }
   h1 .name{ font-size:36px; }
-
-  .hero-actions{ flex-direction:column; }
+  .hero-actions{ flex-direction:column; align-items:stretch; }
   .hero-actions .btn{ width:100%; }
-
-  .impact-grid{ grid-template-columns:1fr; }
-  .mini-links{ display:none; }
-}
-
-/* =========================
-   EXPERIENCE SECTION FIX
-   ========================= */
-
-/* Better section title spacing */
-#experience .section-head,
-#experience .section-headline{
-  margin-bottom: 14px;
-}
-
-/* Make the experience grid tighter + consistent */
-#experience .grid2{
-  gap: 16px;
-  align-items: start;
-}
-
-/* Cards: reduce empty space, cleaner typography */
-#experience .card,
-#experience .project{
-  padding: 18px;
-  border-radius: 18px;
-}
-
-/* Headings */
-#experience h3{
-  margin: 0 0 10px;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-/* Subheader line (date/location) */
-#experience .muted,
-#experience .subline{
-  display: block;
-  margin-bottom: 12px;
-  font-size: 14px;
-  color: rgba(168,175,192,0.95);
-}
-
-/* Bullet list: less indent, better line height */
-#experience ul{
-  margin: 0;
-  padding-left: 18px;
-}
-#experience li{
-  margin: 8px 0;
-  line-height: 1.5;
-  color: rgba(232,234,240,0.90);
-}
-
-/* Reduce the “too tall empty card” feel */
-#experience .card{
-  min-height: unset;
-}
-
-/* Education + Achievements: compact style */
-#experience .card.compact,
-#experience .compact{
-  padding: 16px;
-}
-
-/* CTA bar alignment fix */
-#experience .cta{
-  margin-top: 18px;
-  padding: 16px 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-#experience .cta .btn{
-  margin-left: auto;
-}
-
-/* Mobile: stack nicely */
-@media (max-width: 980px){
-  #experience .grid2{
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 560px){
-  #experience h3{ font-size: 18px; }
-  #experience .cta{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #experience .cta .btn{
-    margin-left: 0;
-    width: 100%;
-  }
+  .impact-grid{ grid-template-columns: 1fr; }
+  .nav-right{ gap:8px; }
 }
