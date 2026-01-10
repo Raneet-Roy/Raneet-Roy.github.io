@@ -2,264 +2,244 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Raneet Roy — Computer Science & Data Portfolio</title>
-  <meta name="description" content="Raneet Roy portfolio — Computer Science graduate, Data/ML & analytics projects, experience, contact." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raneet Roy — Portfolio</title>
+  <meta name="description" content="Raneet Roy — Computer Science • Data • ML. Projects, Experience, Contact." />
+
+  <!-- Vaibhav-like simple typography (clean, readable) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Background glows -->
-  <div class="bg" aria-hidden="true">
-    <div class="glow g1"></div>
-    <div class="glow g2"></div>
-    <div class="glow g3"></div>
-  </div>
-
-  <!-- NAV -->
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="#home">
-        <span class="brand-dot"></span>
-        <div>
-          <div class="brand-top">Raneet Roy</div>
-          <div class="brand-sub">Computer Science • Data • ML</div>
-        </div>
+  <!-- FIXED HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Home">
+        <div class="brand-title">Raneet Roy</div>
+        <div class="brand-sub">Computer Science • Data • ML</div>
       </a>
 
-      <nav class="menu" aria-label="Primary">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <!-- Desktop nav -->
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#home" class="active">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="pill" href="assets/RaneetCV.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
+
+    <!-- Mobile slide-down panel -->
+    <div id="mobileNav" class="nav-mobile" aria-hidden="true">
+      <div class="container nav-mobile-inner">
         <a href="#home">Home</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="nav-actions">
-        <a class="btn ghost" href="assets/RaneetCV.pdf" target="_blank" rel="noopener">Download CV</a>
-        <a class="btn primary" href="#contact">Contact</a>
+        <a class="pill" href="assets/RaneetCV.pdf" target="_blank" rel="noopener">Download CV</a>
       </div>
     </div>
   </header>
 
-  <!-- MAIN -->
-  <main class="wrap">
-    <!-- HERO -->
-    <section id="home" class="hero glass">
+  <main class="container" id="home">
+    <!-- HERO (Vaibhav-like: minimal, text-forward, lots of whitespace) -->
+    <section class="hero">
       <div class="hero-left">
-        <p class="kicker">Open to Data Analyst • Software • ML roles</p>
+        <div class="kicker">Open to Data Analyst • Software • ML roles</div>
 
-        <h1>
-          Computer Science & Data Portfolio
-          <span class="name">Raneet Roy</span>
-        </h1>
+        <h1 class="hero-title">Computer Science & Data Portfolio</h1>
+        <h2 class="hero-name">Raneet Roy</h2>
 
-        <p class="lead">
-          BTech CSE (CGPA 8.48) with hands-on experience in Python, SQL, and Machine Learning,
-          plus real-world execution exposure and MIS reporting at Flipkart (InstaKart).
-          Seeking roles where technical skills drive measurable impact.
+        <p class="hero-desc">
+          BTech CSE (CGPA 8.48) with hands-on experience in Python, SQL, and Machine Learning.
+          Seeking technical roles where data + engineering skills deliver measurable impact.
         </p>
 
+        <div class="hero-links">
+          <a href="mailto:raneet12000120018@gmail.com">raneet12000120018@gmail.com</a>
+          <span class="dot">•</span>
+          <a href="tel:+918617698471">+91 8617698471</a>
+          <span class="dot">•</span>
+          <span>India</span>
+        </div>
+
         <div class="hero-actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="assets/RaneetCV.pdf" target="_blank" rel="noopener">View Resume</a>
-        </div>
-
-        <div class="hero-meta">
-          <span>📧 raneet12000120018@gmail.com</span>
-          <span class="dot">•</span>
-          <span>📱 +91 8617698471</span>
-          <span class="dot">•</span>
-          <span>📍 India</span>
-        </div>
-
-        <div class="mini-box glass">
-          <div class="box-title">Currently</div>
-          <div class="muted">
-            Flipkart (InstaKart Services) — Supply Chain Ops (SCCP), B2C Dept. (Sep 2024 – Present)
-          </div>
-        </div>
-
-        <div class="mini-box glass">
-          <div class="box-title">Impact Snapshot</div>
-          <div class="impact-grid">
-            <div class="impact-card">
-              <div class="impact-num">10+</div>
-              <div class="impact-label">Clients tracked hourly</div>
-            </div>
-            <div class="impact-card">
-              <div class="impact-num">24×7</div>
-              <div class="impact-label">SLA monitoring</div>
-            </div>
-            <div class="impact-card">
-              <div class="impact-num">BBD</div>
-              <div class="impact-label">Peak ops execution</div>
-            </div>
-            <div class="impact-card">
-              <div class="impact-num">ML</div>
-              <div class="impact-label">SVM • RF • LR</div>
-            </div>
-          </div>
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="assets/RaneetCV.pdf" target="_blank" rel="noopener">View Resume</a>
         </div>
       </div>
 
       <div class="hero-right">
-        <div class="portrait glass">
+        <div class="photo">
           <img src="assets/profile.jpg" alt="Raneet Roy" />
         </div>
 
-        <div id="skills" class="skills-card glass">
-          <div class="box-title">Skills</div>
-          <div class="pill-row">
-            <span class="pill">Python</span>
-            <span class="pill">SQL</span>
-            <span class="pill">Excel</span>
-            <span class="pill">C++</span>
-            <span class="pill">HTML/CSS</span>
-            <span class="pill">JavaScript</span>
+        <div class="panel" id="skills">
+          <div class="panel-title">Skills</div>
+          <div class="chips">
+            <span>Python</span><span>SQL</span><span>Excel</span><span>C++</span><span>HTML/CSS</span><span>JavaScript</span>
           </div>
-          <p class="muted small">Libraries: NumPy, Pandas, Matplotlib • ML: scikit-learn</p>
+          <div class="panel-note">Libraries: NumPy, Pandas, Matplotlib • ML: scikit-learn</div>
         </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section">
+    <section class="section" id="projects">
       <div class="section-head">
-        <p class="section-kicker">PROJECTS</p>
-        <h2>Projects</h2>
-        <p class="muted">A few highlights aligned with Data/ML and analytics.</p>
+        <div class="section-kicker">PROJECTS</div>
+        <h3 class="section-title">Selected work</h3>
       </div>
 
-      <div class="grid3">
-        <article class="card glass">
-          <h3>Binary Classification (CSIR-CMERI)</h3>
-          <p class="muted">Benchmarked SVM, RF, Logistic Regression using scikit-learn.</p>
-          <ul class="list">
-            <li>Evaluated accuracy, precision, recall, F1-score.</li>
+      <div class="grid-3">
+        <article class="card">
+          <h4>Binary Classification (CSIR-CMERI)</h4>
+          <p class="muted">Benchmarked SVM, Random Forest, Logistic Regression using scikit-learn.</p>
+          <ul>
+            <li>Evaluated accuracy, precision, recall, and F1-score.</li>
             <li>Tuned SVM achieved best precision & F1.</li>
-            <li>Documented model selection insights.</li>
+            <li>Documented results and selection insights clearly.</li>
           </ul>
         </article>
 
-        <article class="card glass">
-          <h3>MIS Reporting & SLA Tracking</h3>
-          <p class="muted">Daily monitoring dashboards for utilization, attainment %, and SLA compliance.</p>
-          <ul class="list">
-            <li>Hour-level follow-ups on GRN / put-away / pick / pack.</li>
-            <li>Exception tracking and escalation workflow.</li>
+        <article class="card">
+          <h4>MIS Reporting & SLA Monitoring</h4>
+          <p class="muted">Built reporting structure for daily operations and exception tracking.</p>
+          <ul>
+            <li>Tracked manpower utilization and attainment %.</li>
+            <li>Monitored SLA adherence across multiple clients.</li>
             <li>Improved visibility for leadership decisions.</li>
           </ul>
         </article>
 
-        <article class="card glass">
-          <h3>Inventory & Process Execution</h3>
-          <p class="muted">Inbound/outbound process coordination across clients and audit readiness.</p>
-          <ul class="list">
-            <li>Process compliance improvements.</li>
-            <li>Peak ops execution support (BBD).</li>
-            <li>Reduced SLA risk via proactive monitoring.</li>
+        <article class="card">
+          <h4>Warehouse Ops Execution</h4>
+          <p class="muted">Exposure to GRN, put-away, inventory processes, and compliance.</p>
+          <ul>
+            <li>Supported high-volume execution during peak season (BBD).</li>
+            <li>Ensured smooth flow across inbound/outbound.</li>
+            <li>Helped maintain audit readiness and reporting cadence.</li>
           </ul>
         </article>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section">
+    <section class="section" id="experience">
       <div class="section-head">
-        <p class="section-kicker">EXPERIENCE</p>
-        <h2>Work experience</h2>
+        <div class="section-kicker">EXPERIENCE</div>
+        <h3 class="section-title">Work experience</h3>
       </div>
 
-      <div class="grid2">
-        <article class="card glass">
-          <h3>Flipkart (InstaKart Services) — SCCP</h3>
-          <p class="muted small">Sep 2024 – Present • B2C Dept., Haringhata Kalash-RDC</p>
-          <ul class="list">
-            <li>Supervised GRN, packaging, put-away, and inventory operations for efficiency & compliance.</li>
-            <li>Led teams and MIS reporting (utilization, attainment %, SLA adherence; VMS/Tag Loop/SPF).</li>
-            <li>Hourly inbound/outbound follow-ups to ensure SLA compliance for multiple clients.</li>
-            <li>Supported high-volume operations during peak season (e.g., Big Billion Day).</li>
+      <div class="grid-2">
+        <article class="card">
+          <h4>Flipkart (InstaKart Services) — SCCP</h4>
+          <p class="muted">Sep 2024 – Present • B2C Dept., Haringhata Kalash-RDC</p>
+          <ul>
+            <li>Supervised GRN, packaging, put-away, inventory operations for efficiency & compliance.</li>
+            <li>Led teams and MIS reporting (utilization, attainment %, adherence across VMS/Tag Loop/SPF).</li>
+            <li>Hourly follow-ups on inbound/outbound to ensure SLA compliance.</li>
+            <li>Supported high-volume operations during peak season (Big Billion Day).</li>
           </ul>
         </article>
 
-        <article class="card glass">
-          <h3>CSIR-CMERI — Summer Intern</h3>
-          <p class="muted small">May 2023 – Jul 2023 • Binary Classification</p>
-          <ul class="list">
-            <li>Benchmarked SVM, RF, Logistic Regression using scikit-learn.</li>
-            <li>Evaluated precision/recall/F1; tuned SVM best on precision & F1.</li>
-            <li>Documented results and model selection insights.</li>
+        <article class="card">
+          <h4>CSIR-CMERI — Summer Intern</h4>
+          <p class="muted">May 2023 – Jul 2023 • Binary Classification Project</p>
+          <ul>
+            <li>Benchmarked models and validated performance metrics.</li>
+            <li>Tuned SVM; improved precision and F1-score.</li>
+            <li>Maintained clean documentation and results summary.</li>
           </ul>
         </article>
 
-        <article class="card glass compact">
-          <h3>Education</h3>
+        <article class="card">
+          <h4>Education</h4>
           <p class="muted">
-            Dr. B. C. Roy Engineering College, Durgapur<br />
-            <strong>BTech CSE</strong> — CGPA 8.48
+            Dr. B. C. Roy Engineering College, Durgapur<br>
+            BTech CSE — CGPA 8.48
           </p>
         </article>
 
-        <article class="card glass compact">
-          <h3>Achievements</h3>
-          <ul class="list">
+        <article class="card">
+          <h4>Achievements</h4>
+          <ul>
             <li>HackerRank: ★★★★★ in C++</li>
             <li>Microsoft AI-900: 731</li>
             <li>Cocubes AON: 583</li>
           </ul>
         </article>
       </div>
-
-      <div class="cta glass">
-        <div>
-          <div class="cta-title">Interested in working together?</div>
-          <div class="muted">I’m open to Data / Analyst / SDE roles — let’s connect.</div>
-        </div>
-        <a class="btn primary" href="#contact">Contact Me</a>
-      </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
+    <section class="section" id="contact">
       <div class="section-head">
-        <p class="section-kicker">CONTACT</p>
-        <h2>Let’s connect</h2>
+        <div class="section-kicker">CONTACT</div>
+        <h3 class="section-title">Let’s connect</h3>
         <p class="muted">Best way to reach me is email or LinkedIn.</p>
       </div>
 
-      <div class="card glass">
-        <div class="contact">
-          <a href="mailto:raneet12000120018@gmail.com" class="contact-item">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email">
-            <span>raneet12000120018@gmail.com</span>
-          </a>
+      <div class="contact-box">
+        <a class="contact-item" href="mailto:raneet12000120018@gmail.com">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email">
+          <span>raneet12000120018@gmail.com</span>
+        </a>
 
-          <a href="tel:+918617698471" class="contact-item">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="Phone">
-            <span>+91 8617698471</span>
-          </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/raneet-roy/" target="_blank" rel="noopener">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+          <span>linkedin.com/in/raneet-roy</span>
+        </a>
 
-          <a href="https://github.com/Raneet-Roy" target="_blank" rel="noopener" class="contact-item">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
-            <span>GitHub / Raneet-Roy</span>
-          </a>
-
-          <a href="https://www.linkedin.com/in/raneet-roy/" target="_blank" rel="noopener" class="contact-item">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
-            <span>LinkedIn / raneet-roy</span>
-          </a>
-        </div>
+        <a class="contact-item" href="https://github.com/Raneet-Roy" target="_blank" rel="noopener">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+          <span>github.com/Raneet-Roy</span>
+        </a>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="muted small">© <span id="y"></span> Raneet Roy • Hosted on GitHub Pages</div>
+      © <span id="year"></span> Raneet Roy
     </footer>
   </main>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector(".nav-toggle");
+    const mobileNav = document.querySelector(".nav-mobile");
+
+    function closeMenu(){
+      mobileNav.classList.remove("open");
+      mobileNav.setAttribute("aria-hidden", "true");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+
+    toggle.addEventListener("click", () => {
+      const isOpen = mobileNav.classList.toggle("open");
+      mobileNav.setAttribute("aria-hidden", isOpen ? "false" : "true");
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    // close menu on click
+    mobileNav.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", closeMenu);
+    });
+
+    // close menu when scrolling (mobile)
+    window.addEventListener("scroll", () => {
+      if (mobileNav.classList.contains("open")) closeMenu();
+    });
   </script>
 </body>
 </html>
