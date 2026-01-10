@@ -6,7 +6,7 @@
   <title>Raneet Roy — Portfolio</title>
   <meta name="description" content="Raneet Roy — Computer Science • Data • ML. Projects, Experience, Contact." />
 
-  <!-- Vaibhav-like simple typography (clean, readable) -->
+  <!-- Clean academic-ish typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
       </nav>
     </div>
 
-    <!-- Mobile slide-down panel -->
+    <!-- Mobile panel -->
     <div id="mobileNav" class="nav-mobile" aria-hidden="true">
       <div class="container nav-mobile-inner">
         <a href="#home">Home</a>
@@ -52,7 +52,7 @@
   </header>
 
   <main class="container" id="home">
-    <!-- HERO (Vaibhav-like: minimal, text-forward, lots of whitespace) -->
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-left">
         <div class="kicker">Open to Data Analyst • Software • ML roles</div>
@@ -62,7 +62,7 @@
 
         <p class="hero-desc">
           BTech CSE (CGPA 8.48) with hands-on experience in Python, SQL, and Machine Learning.
-          Seeking technical roles where data + engineering skills deliver measurable impact.
+          Looking for roles where technical execution and data skills drive measurable impact.
         </p>
 
         <div class="hero-links">
@@ -77,10 +77,18 @@
           <a class="btn" href="#projects">View Projects</a>
           <a class="btn ghost" href="assets/RaneetCV.pdf" target="_blank" rel="noopener">View Resume</a>
         </div>
+
+        <div class="note-card">
+          <div class="note-title">Currently</div>
+          <div class="note-text">
+            Flipkart (InstaKart Services) — Supply Chain Operations (SCCP), B2C Dept. (Sep 2024 – Present)
+          </div>
+        </div>
       </div>
 
       <div class="hero-right">
         <div class="photo">
+          <!-- Put your photo inside /assets/profile.jpg -->
           <img src="assets/profile.jpg" alt="Raneet Roy" />
         </div>
 
@@ -101,35 +109,85 @@
         <h3 class="section-title">Selected work</h3>
       </div>
 
-      <div class="grid-3">
+      <div class="grid-2">
+        <!-- CSIR-CMERI -->
         <article class="card">
-          <h4>Binary Classification (CSIR-CMERI)</h4>
-          <p class="muted">Benchmarked SVM, Random Forest, Logistic Regression using scikit-learn.</p>
+          <h4>
+            <a href="https://github.com/Raneet-Roy/CSIR-CMERI" target="_blank" rel="noopener">
+              Binary Classification (CSIR–CMERI)
+            </a>
+          </h4>
+          <p class="muted">
+            Summer internship project focused on supervised ML benchmarking and evaluation.
+          </p>
           <ul>
+            <li>Benchmarked SVM, Random Forest, Logistic Regression (scikit-learn).</li>
             <li>Evaluated accuracy, precision, recall, and F1-score.</li>
             <li>Tuned SVM achieved best precision & F1.</li>
-            <li>Documented results and selection insights clearly.</li>
           </ul>
+          <p class="repo">
+            GitHub → <a href="https://github.com/Raneet-Roy/CSIR-CMERI" target="_blank" rel="noopener">Raneet-Roy/CSIR-CMERI</a>
+          </p>
         </article>
 
+        <!-- Breast Cancer Detection -->
         <article class="card">
-          <h4>MIS Reporting & SLA Monitoring</h4>
-          <p class="muted">Built reporting structure for daily operations and exception tracking.</p>
+          <h4>
+            <a href="https://github.com/Raneet-Roy/Breast-Cancer-Detection" target="_blank" rel="noopener">
+              Breast Cancer Detection (BTech Final Year)
+            </a>
+          </h4>
+          <p class="muted">
+            Final year project applying machine learning for malignant vs benign classification.
+          </p>
           <ul>
-            <li>Tracked manpower utilization and attainment %.</li>
-            <li>Monitored SLA adherence across multiple clients.</li>
-            <li>Improved visibility for leadership decisions.</li>
+            <li>Built classification pipeline with preprocessing and evaluation.</li>
+            <li>Focused on precision/recall and model comparison.</li>
+            <li>Organized experiments and results for reproducibility.</li>
           </ul>
+          <p class="repo">
+            GitHub → <a href="https://github.com/Raneet-Roy/Breast-Cancer-Detection" target="_blank" rel="noopener">Raneet-Roy/Breast-Cancer-Detection</a>
+          </p>
         </article>
 
+        <!-- Music Player -->
         <article class="card">
-          <h4>Warehouse Ops Execution</h4>
-          <p class="muted">Exposure to GRN, put-away, inventory processes, and compliance.</p>
+          <h4>
+            <a href="https://github.com/Raneet-Roy/Music-Player" target="_blank" rel="noopener">
+              Music Player
+            </a>
+          </h4>
+          <p class="muted">
+            A UI-driven project demonstrating frontend logic and user interaction.
+          </p>
           <ul>
-            <li>Supported high-volume execution during peak season (BBD).</li>
-            <li>Ensured smooth flow across inbound/outbound.</li>
-            <li>Helped maintain audit readiness and reporting cadence.</li>
+            <li>Play / pause / next / previous controls.</li>
+            <li>Playlist-style navigation and track browsing.</li>
+            <li>Built for smooth user experience and clean interface.</li>
           </ul>
+          <p class="repo">
+            GitHub → <a href="https://github.com/Raneet-Roy/Music-Player" target="_blank" rel="noopener">Raneet-Roy/Music-Player</a>
+          </p>
+        </article>
+
+        <!-- Fashion MNIST -->
+        <article class="card">
+          <h4>
+            <a href="https://github.com/Raneet-Roy/mnist-DL" target="_blank" rel="noopener">
+              Fashion MNIST (Deep Learning)
+            </a>
+          </h4>
+          <p class="muted">
+            Deep learning classification workflow with training + evaluation.
+          </p>
+          <ul>
+            <li>Data preprocessing and training pipeline.</li>
+            <li>Trained a neural network and evaluated performance.</li>
+            <li>Clean experimentation setup for reproducible runs.</li>
+          </ul>
+          <p class="repo">
+            GitHub → <a href="https://github.com/Raneet-Roy/mnist-DL" target="_blank" rel="noopener">Raneet-Roy/mnist-DL</a>
+          </p>
         </article>
       </div>
     </section>
@@ -138,7 +196,7 @@
     <section class="section" id="experience">
       <div class="section-head">
         <div class="section-kicker">EXPERIENCE</div>
-        <h3 class="section-title">Work experience</h3>
+        <h3 class="section-title">Experience</h3>
       </div>
 
       <div class="grid-2">
@@ -155,11 +213,11 @@
 
         <article class="card">
           <h4>CSIR-CMERI — Summer Intern</h4>
-          <p class="muted">May 2023 – Jul 2023 • Binary Classification Project</p>
+          <p class="muted">May 2023 – Jul 2023 • Binary Classification</p>
           <ul>
             <li>Benchmarked models and validated performance metrics.</li>
-            <li>Tuned SVM; improved precision and F1-score.</li>
-            <li>Maintained clean documentation and results summary.</li>
+            <li>Tuned SVM and documented evaluation outcomes.</li>
+            <li>Communicated results clearly with structured reporting.</li>
           </ul>
         </article>
 
@@ -214,8 +272,10 @@
   </main>
 
   <script>
+    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
 
+    // Mobile nav toggle
     const toggle = document.querySelector(".nav-toggle");
     const mobileNav = document.querySelector(".nav-mobile");
 
@@ -231,14 +291,8 @@
       toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
 
-    // close menu on click
     mobileNav.querySelectorAll("a").forEach(a => {
       a.addEventListener("click", closeMenu);
-    });
-
-    // close menu when scrolling (mobile)
-    window.addEventListener("scroll", () => {
-      if (mobileNav.classList.contains("open")) closeMenu();
     });
   </script>
 </body>
